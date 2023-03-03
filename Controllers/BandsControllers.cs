@@ -16,7 +16,7 @@ namespace BandsMVC.Controllers
         [HttpGet("details/{id}")]
         public IActionResult Details(int id)
         {
-            Band band = dataService.GetBandById();
+            Band band = dataService.GetBandById(id);
             return View(band);
         }
     }
