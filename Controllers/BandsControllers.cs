@@ -13,10 +13,11 @@ namespace BandsMVC.Controllers
             return View(bandList);
         }
 
-        [HttpGet("details/{Id}")]
-        public IActionResult Details()
+        [HttpGet("details/{id}")]
+        public IActionResult Details(int id)
         {
-            return View();
+            Band band = dataService.GetBandById();
+            return View(band);
         }
     }
 }

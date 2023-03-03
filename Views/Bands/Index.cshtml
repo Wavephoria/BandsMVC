@@ -10,12 +10,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>This is product page</h3>
+    <h3>---</h3>
     <div>
         <ul>
             @foreach (var item in Model)
             { 
-                <li>@item - @item.Price</li>
+                <li>@item.Name - @item.Description</li>
             }
         </ul>
     </div>
