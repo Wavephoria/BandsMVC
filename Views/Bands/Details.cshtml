@@ -1,5 +1,5 @@
-@using BandsMVC.Models;
-@model Band
+@* @using BandsMVC.Models;
+@model Band *@
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-<p>Information about bands</p>
+    <p>Information about bands @Model.Name and @Model.Description</p>
     
 </body>
 </html>

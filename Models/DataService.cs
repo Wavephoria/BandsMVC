@@ -12,9 +12,9 @@ namespace BandsMVC.Models
             new Band { Id = 232, Name = "Björnarna", Description = "Punk"}
         };
 
-        public Band GetBandById(int Id)
+        public Band? GetBandById(int id)
         {
-            return (Band)bands.Where(a => a.Id == Id);
+            return bands.FirstOrDefault(a => a.Id == id);
         }
 
         public Band[] GetAllBands()
